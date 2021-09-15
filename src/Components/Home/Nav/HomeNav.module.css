@@ -1,0 +1,113 @@
+.nav {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  height: 100vh;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  padding: 10px 10px;
+}
+
+.logo {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  padding: 10px 10px;
+  border-radius: 75px;
+}
+
+.funcionamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: #848484;
+  font-weight: 500;
+}
+
+.statusf {
+  background: #f00;
+  padding: 5px 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.statusv {
+  background: green;
+  padding: 5px 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0px;
+  text-decoration: none;
+  color: #848484;
+  font-weight: 500;
+}
+
+.nav a svg {
+  margin-bottom: 6px;
+}
+
+.active {
+  background-color: #fdc844;
+  border-radius: 8px;
+}
+
+.nav a.active {
+  color: #000;
+}
+
+.active path {
+  fill: #000;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: row;
+    position: initial;
+    height: auto;
+    width: 100%;
+    justify-content: initial;
+    overflow: auto;
+    padding: 0px;
+    padding: 16px;
+    margin-top: 58px;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    min-width: 120px;
+    padding: 14px 8px;
+    margin: 0px 16px 0px 0px;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+  }
+}
